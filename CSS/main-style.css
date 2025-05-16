@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Major+Mono+Display&display=swap');
+body
+{
+	background-color: #780000;
+	color: #FFFFFF;
+	font-family:"Josefin Sans", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif"; 
+	font-size: 16px;
+	margin: 0 
+}
+.font-subtitle
+{
+	font-family: "Major Mono Display", monospace;
+  font-weight: 650;
+  font-style: normal;
+}
+h1,h2
+{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: #FFF956;
+	
+}
+
+h1{font-size:40}
+h2{font-size:38}
+h3{font-size:35}
+h4{font-size:30}
+h5{font-size:25;
+color: #FFF956}
+h6{font-size:20}
+h1,h2,h3{margin-bottom: 0; margin-top: 0}
+/*------------*/
+.container-fluid
+{
+   width: 100%; padding-left: 16px; padding-right: 16px
+	}
+/*-----------*/
+.container
+	{
+	width: 95%; margin: auto	
+	}
+	
+	@media(min-width:600px)
+	{
+		.container
+		{
+			width: 90%; margin: auto
+		}
+	}
+	@media(min-width:1000px)
+	{
+		.container
+		{
+			width: 80%; margin: auto
+		}
+	}
+	/*---------- chia he thong grid 12 column*/
+.col-1{ width: 8.3333%; }
+.col-2{ width:16.6666%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width:41.66%}
+.col-6{ width: 50%}
+.col-7{ width:58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+	{
+		padding: 15px;
+		/*border:1px solid orange*/
+	}
+	*{box-sizing: border-box}
+	.img-100{width: 100%}
+	.row{
+		display: flex;
+		flex-wrap: wrap
+	}
+.card
+{ 
+	background: #003049;
+	border-radius: 15px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px;
+	
+}
+footer
+{
+	background:  #003049 ;
+	border-radius: 15px
+	
+}
+.text-primary {color: #FFF956 }
+.text-secondary { color: wheat}
+.text-light { color: #FDF0D5}
+.text-dark {color: #003049 }
+.bg-primary {background-color:#FFF956 }
+.bg-secondary { background-color:wheat }
+.bg-light { background-color:#FDF0D5 }
+.bg-dark {background-color:#003049}
+
+.btn-primary 
+{
+	background-color: #FFF956;
+	color: #003049;
+	padding: 8px 16px;
+	border-radius: 4px	
+}
+.btn-primary:hover
+{
+	background-color: #FDF0D5;
+	color:#003049
+	}
+
+.bt-outline-primary
+{
+	border: 1px #FFF956 solid;
+	color: #FFF956;
+	padding: 8px 16px;
+	border-radius: 4px	
+	}
+.btn-outline-primary:hover
+{
+	background-color: #FFF956;
+	color: #003049
+	}
+ul.menu
+{
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content: space-around	
+}
+ul.menu li a
+{
+	padding: 8px 16px;
+	color: #FDF0D5;
+	margin: 2px	;
+	border-radius: 4px
+}
+ul.menu li a:hover
+{
+	background-color: #FFF956;
+	color:  #003049;
+	border-bottom:  2px #003049
+	
+}
+p
+{
+	margin-left: 50;
+	margin-right: 50
+	
+}
+.banner
+{
+	position: relative
+	}
+.banner-caption
+{
+	padding: 20 px;
+	width: 40%;
+	position: absolute;
+	right: 10%; top: 20%
+	}
